@@ -2,7 +2,8 @@ name: Update Slides, PDFs, HTMLs
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: main
+    paths: /notebooks/**
 
 jobs:
   build:
