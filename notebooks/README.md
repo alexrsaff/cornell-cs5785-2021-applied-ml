@@ -21,7 +21,7 @@ make all
 
 If you want to generate each type of file separately, you can type
 ```
-make notes
+make htmls
 make slides
 make pdfs
 ```
