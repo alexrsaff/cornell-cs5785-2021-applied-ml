@@ -48,7 +48,6 @@ pip install -r requirements.txt
 ## Issues
 
 Currently, there are issues in linking images to the contents:
-* The `*.slides.html` must be located in the same folder as the `img` folder in order to display images.
 * The `*.pdf` files do not contain images due a limitation of `nbconvert`.
 
 However the `*.html` notes are fully portable.

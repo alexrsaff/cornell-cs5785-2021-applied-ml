@@ -35,7 +35,11 @@ This repo is organized as follows.
 ```
 .
 ├── README.md
-├── notebooks             # Notebooks and slides
+├── notebooks             # Notebooks
+├── slides                # Slide versions of the notebooks
+├── pdfs                  # PDF versions of the notebooks
+├── htmls                 # html versions of the notebooks
+├── img                   # images required for the notebooks
 └── requirements.txt      # Packages needed for your virtualenv
 ```
 
