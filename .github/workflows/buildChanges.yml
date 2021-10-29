@@ -1,30 +1,22 @@
 name: Update Slides, PDFs, HTMLs
-
 on:
   push:
     branches: main
     paths: /notebooks/**
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Change dir
-      run: cd ./notebooks
-      
-    - name: Install dependencies
-      run: pip install -r '../requirements.txt'
-    
-    - name: Make all
-      run: make all
-      
-    - name: Commit report
-      run: |
-        git config --global user.name 'BuilderBot'
-        git config --global user.email 'BuilderBot@users.noreply.github.com'
-        git commit -am "Update Slides, PDFs, and HTMLs with latest changes."
-        git push
+      - uses: actions/checkout@v2
+      - name: Change dir
+        run: cd ./notebooks
+      - name: Install dependencies
+        run: pip install -r '../requirements.txt'
+      - name: Make all
+        run: make all
+      - name: Commit report
+        run: |
+          git config --global user.name 'BuilderBot'
+          git config --global user.email 'BuilderBot@users.noreply.github.com'
+          git commit -am "Update Slides, PDFs, and HTMLs with latest changes."
+          git push
