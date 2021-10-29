@@ -1,7 +1,7 @@
 # Applied Machine Learning (Cornell CS5785, Fall 2021)
 
 ## Lecture Slides
-[lecture1 - introduction](./html/lecture1-introduction.slides.html)  
+lecture1 - introduction: [slides](./slides/lecture1-introduction.slides.html), [pdf](./pdfs/lecture1-introduction.pdf), [html](./htmls/lecture1-introduction.html)  
 [lecture2 - supervised learning](./html/lecture2-supervised-learning.slides.html)  
 [lecture3 - linear regression](./html/lecture3-linear-regression.slides.html)  
 [lecture4 - classification](./html/lecture4-classification.slides.html)  

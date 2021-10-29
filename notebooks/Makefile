@@ -2,20 +2,20 @@
 
 NOTEBOOKS:=$(wildcard *.ipynb)
 SLIDES:=$(subst ipynb,slides.html,$(NOTEBOOKS))
-HTML:=$(subst ipynb,html,$(NOTEBOOKS))
+HTMLS:=$(subst ipynb,html,$(NOTEBOOKS))
 PDFS:=$(subst ipynb,pdf,$(NOTEBOOKS))
 
 $(SLIDES): %.slides.html: %.ipynb
-	jupyter nbconvert $< --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
+	jupyter nbconvert $< --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0" --output-dir "../slides/"
 
-$(HTML): %.html: %.ipynb
-	jupyter nbconvert $< --to html_embed --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
+$(HTMLS): %.html: %.ipynb
+	jupyter nbconvert $< --to html_embed --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0" --output-dir "../htmls/"
 
 $(PDFS): %.pdf: %.ipynb
-	jupyter nbconvert $< --to pdf --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
+	jupyter nbconvert $< --to pdf --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0" --output-dir "../pdfs/"
 
-notes:
-	make $(HTML)
+htmls:
+	make $(HTMLS)
 
 slides:
 	make $(SLIDES)
@@ -24,7 +24,7 @@ pdfs:
 	make $(PDFS)
 
 clean:
-	rm *.html *.pdf
+	rm ../htmls/*.html ../pdfs/*.pdf ../slides/*.slides.html
 
 all:
-	make notes slides pdfs
+	make slides htmls pdfs
