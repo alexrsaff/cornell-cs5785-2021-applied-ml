@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - 'notebooks/**'
+      - 'img/**'
 jobs:
   build:
     runs-on: ubuntu-latest
