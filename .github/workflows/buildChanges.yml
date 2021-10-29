@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Change dir
-        run: cd ./notebooks
       - name: Install dependencies
-        run: pip install -r '../requirements.txt'
+        run: pip install -r 'requirements.txt'
       - name: Make all
-        run: make all
+        run: |
+          cd ../notebooks
+          make all
       - name: Commit report
         run: |
           git config --global user.name 'BuilderBot'
