@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - /notebooks/**
+      - 'notebooks/**'
 jobs:
   build:
     runs-on: ubuntu-latest
