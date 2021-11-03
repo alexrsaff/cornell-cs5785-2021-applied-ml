@@ -19,6 +19,7 @@ Lecture 14 - Kernels: [slides](./slides/lecture14-kernels.slides.html), [pdf](./
 Lecture 15 - Midterm review: [slides](./slides/lecture15-midterm-review.slides.html), [pdf](./pdfs/lecture15-midterm-review.pdf), [html](./htmls/lecture15-midterm-review.html)  
 Lecture 16 - Decision trees: [slides](./slides/lecture16-decision-trees.slides.html), [pdf](./pdfs/lecture16-decision-trees.pdf), [html](./htmls/lecture16-decision-trees.html)  
 Lecture 17 - Boosting: [slides](./slides/lecture17-boosting.slides.html), [pdf](./pdfs/lecture17-boosting.pdf), [html](./htmls/lecture17-boosting.html)   
+Lecture 18 - Neural Networks: [slides](./slides/lecture18-neural-networks.slides.html), [pdf](./pdfs/lecture18-neural-networks.pdf), [html](./htmls/lecture18-neural-networks.html)  
 
 ## Overview
 This repo contains executable course notes and slides for the Applied ML course at Cornell and Cornell Tech (Fall 2021 edition).
