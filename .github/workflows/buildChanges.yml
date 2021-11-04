@@ -30,5 +30,6 @@ jobs:
         run: |
           git config --global user.name 'BuilderBot'
           git config --global user.email 'BuilderBot@users.noreply.github.com'
+          git add ../../pdfs ../../htmls ../../slides
           git commit -am "Update Slides, PDFs, and HTMLs with latest changes."
           git push
