@@ -13653,12 +13653,35 @@ $$ r(x) = \begin{cases}\text{true} &amp; \text{if } x_\text{bmi} \leq 0.009 \\ \
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Decision-Regions">Decision Regions<a class="anchor-link" href="#Decision-Regions">&#182;</a></h1><p>Decision trees partition the space</p>
+<h1 id="Decision-Regions">Decision Regions<a class="anchor-link" href="#Decision-Regions">&#182;</a></h1><p>Decision trees partition the space of features into regions:</p>
 <ul>
 <li>A decision region $R\subseteq \mathcal{X}$ is a subset of the feature space defined by the application of a set of rules $r_1, r_2, \ldots, r_m$ and their values $v_1, v_2, \ldots, v_m \in \{\text{true}, \text{false}\}$, i.e.:
 $$ R = \{x \in \mathcal{X} \mid r_1(x) = v_1 \text{ and } \ldots \text{ and } r_m(x) = v_m \} $$</li>
 <li>For example, a decision region in the diabetes problem is:
 $$ R = \{x \in \mathcal{X} \mid x_\text{bmi} \leq 0.009 \text{ and } x_\text{bp} &gt; 0.004 \} $$</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can illustrate decision regions via this figure from Hastie et al.</p>
+<center><img width=50% src="../img/decision_tree.png"></center>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also illustrate decision trees via this figure from Hastie et al.</p>
+<p><left><img width=50% src="../img/decision_tree.png"></left>The illustrations are as follows:</p>
+<ul>
+<li>Top left: regions that cannot be represented by a tree</li>
+<li>Top right: regions that can be represented by a tree</li>
+<li>Bottom left: tree generating the top right regions</li>
+<li>Bottom right: function values assigned to the regions</li>
 </ul>
 
 </div>
@@ -13673,28 +13696,6 @@ $$ f(x) = \sum_{R \in \mathcal{R}} y_R \mathbb{I}\{x \in R\}. $$</p>
 <li>The $\mathbb{I}\{\cdot\}$ is an indicator function (one if $\{\cdot\}$ is true, else zero) and values $y_R \in \mathcal{Y}$ are the outputs for that region.</li>
 <li>The set $\mathcal{R}$ is a collection of decision regions. They are obtained by a recursive learning procedure (<em>recursive binary splitting</em>).</li>
 <li>The rules defining the regions $\mathcal{R}$ can be organized into a tree, with one rule per internal node and regions being the leaves.</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also illustrate decision trees via this figure from Hastie et al.</p>
-<left><img width=50% src="../img/decision_tree.png"></left>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The illustrations are as follows:</p>
-<ul>
-<li>Top left: regions that cannot be represented by a tree</li>
-<li>Top right: regions that can be represented by a tree</li>
-<li>Bottom left: tree generating the top right regions</li>
-<li>Bottom right: function values assigned to the regions</li>
 </ul>
 
 </div>
@@ -13803,7 +13804,7 @@ $$ \min_{r \in \mathcal{U}} \sum_{(x, y) \in \mathcal{D} \,\mid\, r(x) = \text{t
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Objectives-for-Trees:-Classification">Objectives for Trees: Classification<a class="anchor-link" href="#Objectives-for-Trees:-Classification">&#182;</a></h1><p>In classification, we may similarly use the misclassification rate
-$$ L(\mathcal{D}) = \sum_{(x, y) \in \mathcal{D}} \mathbb{I} \left\{ y = \texttt{most-common-y}(\mathcal{D}) \right\}. $$</p>
+$$ L(\mathcal{D}) = \frac{1}{|\mathcal{D}|} \sum_{(x, y) \in \mathcal{D}} \mathbb{I} \left\{ y \neq \texttt{most-common-y}(\mathcal{D}) \right\}. $$</p>
 <p>If this was a leaf node, we would predict $\texttt{most-common-y}(\mathcal{D})$, the most common class $y$ in the data. The above loss measures the resulting misclassification error.</p>
 
 </div>
