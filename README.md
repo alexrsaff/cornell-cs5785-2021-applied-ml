@@ -23,8 +23,8 @@ Lecture 18 - Neural Networks: [slides](./slides/lecture18-neural-networks.slides
 Lecture 19 - Deep Learning: [slides](./slides/lecture19-deep-learning.slides.html), [pdf](./pdfs/lecture19-deep-learning.pdf), [html](./htmls/lecture19-deep-learning.html)  
 Lecture 20 - Evaluation: [slides](./slides/lecture20-evaluation.slides.html), [pdf](./pdfs/lecture20-evaluation.pdf), [html](./htmls/lecture20-evaluation.html)  
 Lecture 21 - Model Iteration: [slides](./slides/lecture21-model-iteration.slides.html), [pdf](./pdfs/lecture21-model-iteration.pdf), [html](./htmls/lecture21-model-iteration.html)  
-Lecture 22 - Evaluation Tools: [slides](./slides/lecture22-evaluation-tools.slides.html), [pdf](./pdfs/lecture22-evaluation-tools.pdf), [html](./htmls/lecture22-evaluation-tools.html)
-
+Lecture 22 - Evaluation Tools: [slides](./slides/lecture22-evaluation-tools.slides.html), [pdf](./pdfs/lecture22-evaluation-tools.pdf), [html](./htmls/lecture22-evaluation-tools.html)  
+Lecture 23 - Overview: [slides](./slides/lecture23-overview.slides.html), [pdf](./pdfs/lecture23-overview.pdf), [html](./htmls/lecture23-overview.html)  
 
 ## Overview
 This repo contains executable course notes and slides for the Applied ML course at Cornell and Cornell Tech (Fall 2021 edition).
