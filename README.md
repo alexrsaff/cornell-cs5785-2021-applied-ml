@@ -1,7 +1,7 @@
 # Applied Machine Learning (Cornell CS5785, Fall 2021)
 
 ## Lecture Content
-Home: https://alexrsaff.github.io/cornell-cs5785-2021-applied-ml/  
+Home: [https://alexrsaff.github.io/cornell-cs5785-2021-applied-ml](https://alexrsaff.github.io/cornell-cs5785-2021-applied-ml)  
 Lecture 1 - Introduction: [slides](./slides/lecture1-introduction.slides.html), [pdf](./pdfs/lecture1-introduction.pdf), [html](./htmls/lecture1-introduction.html)  
 Lecture 2 - Supervised learning: [slides](./slides/lecture2-supervised-learning.slides.html), [pdf](./pdfs/lecture2-supervised-learning.pdf), [html](./htmls/lecture2-supervised-learning.html)  
 Lecture 3 - Linear regression: [slides](./slides/lecture3-linear-regression.slides.html), [pdf](./pdfs/lecture3-linear-regression.pdf), [html](./htmls/lecture3-linear-regression.html)  
